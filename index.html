@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Blocker Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ad Blocker Test</h1>
+        <div id="ad-container"></div>
+        <button onclick="removeAds()">End Test</button>
+    </div>
+
+    <script>
+        function createAd() {
+            var ad = document.createElement('div');
+            ad.className = 'ad';
+            ad.innerHTML = 'This is an ad!';
+            document.getElementById('ad-container').appendChild(ad);
+        }
+        
+        function removeAds() {
+            var ads = document.getElementsByClassName('ad');
+            while (ads[0]) {
+                ads[0].parentNode.removeChild(ads[0]);
+            }
+            document.getElementById('ad-container').innerHTML = '<p>Test complete! Ads have been removed.</p>';
+        }
+
+        // Simulate loading multiple ads
+        window.onload = function() {
+            for (var i = 0; i < 10; i++) {
+                createAd();
+            }
+        };
+    </script>
+</body>
+</html>
