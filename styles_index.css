@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: darkgrey;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+p, .result {
+    color: white;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
