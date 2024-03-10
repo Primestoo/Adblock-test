@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ad Blocker</title>
+    <link rel="stylesheet" href="styles_test-adblocker.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="liquid"></div>
+            <div class="liquid"></div>
+            <div class="liquid"></div>
+            <div class="percentage">0%</div>
+        </div>
+        <div id="adStats">
+            <p>Total Ads: 140</p>
+            <p>Blocked Ads: <span id="blockedAds">0</span> ads</p>
+            <p>Non-Blocked Ads: <span id="nonBlockedAds">0</span> ads</p>
+        </div>
+        <button id="seeResultsBtn" onclick="seeResults()">See Results</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
